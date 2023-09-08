@@ -42,11 +42,9 @@
       </div>
       <div
         data-testid="currentUTCTime"
+        id="utc-time"
         style="display: flex; gap: 4px; align-items: center"
-      >
-        <p>Current UTC Time:</p>
-        <strong>14:38 UTC</strong>
-      </div>
+      ></div>
       <div
         data-testid="myTrack"
         style="display: flex; gap: 4px; align-items: center"
@@ -66,5 +64,10 @@
         >
       </div>
     </main>
+    <script>
+      const currentUtcTime = new Date().getTime();
+      const utcTimeElement = document.getElementById("utc-time");
+      utcTimeElement.textContent = `Current UTC Time: ${currentUtcTime}`;
+    </script>
   </body>
 </html>
