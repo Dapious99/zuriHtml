@@ -6,67 +6,62 @@
       const utcTimeElement = document.getElementById("utc-time");
       utcTimeElement.textContent = `Current UTC Time: ${currentUtcTime}`;
     </script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
+        background: #fff;
+        padding: 0.5rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      h1 {
+        background: #000;
+        color: #fff;
+        padding: 10px;
+      }
+      div {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>zuri Personal Data Showcase</title>
   </head>
-  <body style="display: flex; justify-content: center; align-items: center">
-    <main
-      style="
-        background: #fff;
-        padding: 0.5rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      "
-    >
-      <h1 style="background: #000; color: #fff; padding: 10px">
-        Personal Data Showcase
-      </h1>
-      <div
-        data-testid="slackUserName"
-        style="display: flex; gap: 4px; align-items: center"
-      >
+  <body>
+    <main>
+      <h1>Personal Data Showcase</h1>
+      <div data-testid="slackUserName" style="">
         <p>Slack Name:</p>
         <strong>Omotosho Kamalideen Opeyemi</strong>
       </div>
-      <div
-        data-testid="slackDisplayImage"
-        style="display: flex; gap: 4px; align-items: center"
-      >
+      <div data-testid="slackDisplayImage">
         <p>Slack Display Picture:</p>
         <img
           src="https://ca.slack-edge.com/T05FFAA91JP-U05RU2CUQHX-2aba833124a9-192"
           alt=""
         />
       </div>
-      <div
-        style="display: flex; gap: 4px; align-items: center"
-        data-testid="currentDayOfTheWeek"
-      >
+      <div data-testid="currentDayOfTheWeek">
         <p>Current Day of the Week:</p>
         <strong>Friday</strong>
       </div>
-      <div
-        data-testid="currentUTCTime"
-        id="utc-time"
-        style="display: flex; gap: 4px; align-items: center"
-      ></div>
-      <div
-        data-testid="myTrack"
-        style="display: flex; gap: 4px; align-items: center"
-      >
+      <div data-testid="currentUTCTime" id="utc-time"></div>
+      <div data-testid="myTrack">
         <p>Track:</p>
         <strong>Frontend</strong>
       </div>
-      <div
-        style="display: flex; gap: 4px; align-items: center"
-        data-testid="“githubURL”"
-      >
+      <div data-testid="“githubURL”">
         <p>GitHub URL:</p>
-        <a
-          href="https://github.com/Dapious99/zuriHtml.git"
-          style="text-decoration: none; color: #000"
-          >githubRepository</a
-        >
+        <a href="https://github.com/Dapious99/zuriHtml.git">githubRepository</a>
       </div>
     </main>
   </body>
